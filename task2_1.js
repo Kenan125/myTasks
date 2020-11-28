@@ -1,7 +1,9 @@
 const str1 = "radar";
 function isPalindrome(str) {
-    for (let i = str.length - 1; i >= 0; i--) {
-        reversedString = reversedString + str[I];
+    lowerCase = str.toLowerCase();
+    let reversedString = "";
+    for (let i = lowerCase.length - 1; i >= 0; i--) {
+        reversedString = reversedString + lowerCase[i];
 
     }
     if (reversedString === str) {
@@ -11,17 +13,6 @@ function isPalindrome(str) {
         return false;
     }
 }
-// gives result as "false" because reversedString is always = "firstLetter"
 
-
-let rvsword = isPalindrome();
-if (rvsword === isPalindrome("reversedString")) {
-    return result;
-
-} else {
-    return false;
-}
-
-const firstWord = reallyPalindrome(str1);
+const firstWord = isPalindrome(str1);
 console.log(firstWord);
-//always gives error "Cannot read property 'length' of undefined"
