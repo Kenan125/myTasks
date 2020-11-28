@@ -13,6 +13,6 @@ function automorphic(number) {
         return false;
     }
 }
-const given_number = 17;
+const given_number = 324;
 
 console.log(automorphic(given_number));
